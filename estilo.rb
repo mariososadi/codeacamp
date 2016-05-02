@@ -3,7 +3,7 @@ class PERSON
   attr_reader :name, :age
   attr_writer :name
   LEGAL_AGE = 18
-  LIFE_STAGE = {childhood: 12, teenager: 19, adult:50}
+  LIFE_STAGE = {childhood: 12, teenager: 19, adult: 50}
 
   def initialize(name, age)
     @name = name
