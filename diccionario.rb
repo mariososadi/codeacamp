@@ -10,7 +10,12 @@ while word.empty? == false
 end
 
 a.delete_if{ |x| x.empty? }
-a.collect{ |x| x.upcase }
+a.collect!{ |x| x.capitalize }.sort
 
-#puts "Felicidades! Tu diccionario tiene #{a.length} palabras:"
-#a.sort.each { |x| puts x }
+puts "Felicidades! Tu diccionario tiene #{a.length} palabras:"
+a.each { |x| puts x }
+
+# ----------------------------------------------------------------------------------
+# Incrementar Dificultad
+
+
