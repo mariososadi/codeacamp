@@ -1,0 +1,69 @@
+CodeaCamp01s-Mac-mini:desktop codea_mac_01$ irb
+irb(main):001:0> 3+3
+=> 6
+irb(main):002:0> hola+mundo
+NameError: undefined local variable or method `hola' for main:Object
+	from (irb):2
+	from /Users/codea_mac_01/.rbenv/versions/2.2.2/bin/irb:11:in `<main>'
+irb(main):003:0> "hola"+"mundo"
+=> "holamundo"
+irb(main):004:0> "hola"+" "+"mundo"
+=> "hola mundo"
+irb(main):005:0> mario = 3
+=> 3
+irb(main):006:0> pepe = 4
+=> 4
+irb(main):007:0> mario + pepe
+=> 7
+irb(main):008:0> array = [2,"pepe",:mario]
+=> [2, "pepe", :mario]
+irb(main):009:0> puts array
+2
+pepe
+mario
+=> nil
+irb(main):010:0> print array
+[2, "pepe", :mario]=> nil
+irb(main):011:0> p array
+[2, "pepe", :mario]
+=> [2, "pepe", :mario]
+irb(main):012:0> inspect array
+ArgumentError: wrong number of arguments (1 for 0)
+	from (irb):12:in `to_s'
+	from (irb):12
+	from /Users/codea_mac_01/.rbenv/versions/2.2.2/bin/irb:11:in `<main>'
+irb(main):013:0> array.inspect
+=> "[2, \"pepe\", :mario]"
+irb(main):014:0> mario = "mArIo"
+=> "mArIo"
+irb(main):015:0> mario.capitalize
+=> "Mario"
+irb(main):016:0> p mario
+"mArIo"
+=> "mArIo"
+irb(main):017:0> mario.capitalize!
+=> "Mario"
+irb(main):018:0> p mario
+"Mario"
+=> "Mario"
+irb(main):019:0> Math.sqrt(7690939204)
+=> 87698.0
+irb(main):020:0> def shout
+irb(main):021:1> end
+=> :shout
+irb(main):022:0> def shout
+irb(main):023:1> def shout
+irb(main):024:2> end
+irb(main):025:1> end
+=> :shout
+irb(main):026:0> def shout(palabra)
+irb(main):027:1> return palabra.upcase
+irb(main):028:1> end
+=> :shout
+irb(main):029:0> shout(hola)
+NameError: undefined local variable or method `hola' for main:Object
+	from (irb):29
+	from /Users/codea_mac_01/.rbenv/versions/2.2.2/bin/irb:11:in `<main>'
+irb(main):030:0> shout("hola")
+=> "HOLA"
+irb(main):031:0> 
