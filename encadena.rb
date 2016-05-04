@@ -1,6 +1,8 @@
 
-
-
+# TODO: Refactoriza buscando elegancia 
+def shout_backwards(string)
+  string.upcase.reverse + "!!!"
+end
 
 #  AYUDAME: Refactoriza buscando elegancia 
 def squared_primes(array)
